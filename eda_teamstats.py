@@ -39,11 +39,14 @@ def plot_average_score_by_location(team_stats):
     home_avg, away_avg = average_score_by_location(team_stats)
 
     plt.figure(figsize=(7, 5))
-    plt.bar(
+    bars = plt.bar(
         ['Home Team', 'Away Team'],
         [home_avg, away_avg],
         color=['steelblue', 'orange']
     )
+
+    # Add a label on top of each bar
+    plt.bar_label(bars, fmt='%.2f', padding=3)
 
     plt.title('Warriors Regular Season Average Points by Location')
     plt.xlabel('Game Location')
