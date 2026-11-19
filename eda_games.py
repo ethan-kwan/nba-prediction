@@ -21,11 +21,14 @@ def plot_home_win_percentage(games):
     home_win_pct, away_win_pct = home_win_percentage(games)
 
     plt.figure(figsize=(7, 5))
-    plt.bar(
+    bars = plt.bar(
         ['Home Team', 'Away Team'],
         [home_win_pct, away_win_pct],
         color=['steelblue', 'orange']
     )
+
+    # Add a label on top of each bar
+    plt.bar_label(bars, fmt='%.1f%%', padding=3)
 
     plt.title('NBA Regular Season Win Percentage by Location')
     plt.xlabel('Team Location')
