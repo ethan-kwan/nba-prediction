@@ -6,6 +6,8 @@ NBA Prediction Project
 Exploratory data analysis of NBA team statistics.
 """
 
+import os
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -47,7 +49,8 @@ def plot_average_score_by_location(team_stats):
     plt.xlabel('Game Location')
     plt.ylabel('Average Points Scored')
 
-    plt.savefig('avg_score_by_location.png')
+    os.makedirs('figures', exist_ok=True)
+    plt.savefig('figures/avg_score_by_location.png')
     # plt.show()
 
 

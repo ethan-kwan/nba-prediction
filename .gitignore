@@ -41,11 +41,13 @@ data/
 *.csv
 
 # Generated plots / outputs
-figures/
+# Track final figures in figures/, ignore loose root-level images
 outputs/
 *.png
 *.jpg
 *.pdf
+!figures/
+!figures/*.png
 
 # Environment / secrets
 .env
