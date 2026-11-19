@@ -113,9 +113,9 @@ python -m pip install jupyter
 jupyter notebook exploration.ipynb
 ```
 
-### Option B: Cursor / VS Code
+### Option B: VS Code / Other IDE
 
-1. Open the `nba-prediction` folder in Cursor.
+1. Open the `nba-prediction` folder in your IDE.
 2. Open `exploration.ipynb`.
 3. Select the notebook kernel:
    - Click **Select Kernel** (top-right of the notebook).
