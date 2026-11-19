@@ -6,6 +6,8 @@ NBA Prediction Project
 Exploratory data analysis of NBA game results.
 """
 
+import os
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -30,7 +32,8 @@ def plot_home_win_percentage(games):
     plt.ylabel('Win Percentage (%)')
     plt.ylim(0, 100)
 
-    plt.savefig('home_win_percentage.png')
+    os.makedirs('figures', exist_ok=True)
+    plt.savefig('figures/home_win_percentage.png')
     #plt.show()
 
     # print('Home win percentage:', round(home_win_pct, 2))
